@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario: #000000;
+    --coror-secundario: #f6f6f6;
+    --color-terciario: #22d4fd;
+
+    --font-monserrat: "Montserrat", sans-serif; 
+    --font-krona: "Krona One", sans-serif;
+}
+* {
+    padding:0;
+    margin:0;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--coror-secundario);
+    box-sizing: border-box;
+}
+
+.diseno_header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header_menu{
+    display: flex;
+    gap: 80px;
+    
+}
+
+.diseno_header_link{
+    font-family: var(--font-monserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+.posicion{
+    display: flex;
+    align-items: center;
+    padding: 8% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.posicion__centrado{
+    width: 50%;
+    display: flex;
+    flex-direction: column ;
+    gap: 40px;
+}
+.titulo-destacado{
+    color: var(--color-terciario);
+}
+.estilo_titulo{
+    font-size: 2.25rem;
+    font-family: var(--font-krona);
+}
+
+.estilo_parrafo{
+    font-size: 1.5rem; 
+    font-family: var(--font-monserrat); 
+    
+}
+
+.estilo_subtitulo{
+    font-family: var(--font-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    
+}
+
+.tamano_imagen{
+    width: 50%;
+}
+
+.tamano_botones{
+    width: 50%;
+    font-size: 1.5rem; 
+    font-family: var(--font-monserrat) ;
+    font-weight: 600;
+    text-align: center;
+    padding: 16px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--coror-secundario);
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tamano_botones:hover{
+    background-color: var(--color-primario);
+}
+
+.diseno_footer{
+    
+    background-color: var(--color-terciario);
+    text-align: center;
+    color: #000000;
+    padding: 23.6px;
+    font-family: var(--font-monserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+   
+}
+
+@media (max-width: 1200px){
+
+    .header{
+        padding: 10%;
+    }
+    
+    .header_menu{
+        justify-content: center;
+    }
+
+    .posicion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    
+    .posicion__centrado{
+        width: auto;
+    }
+}
